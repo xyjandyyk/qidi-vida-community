@@ -1,4 +1,4 @@
-# 更新协议草案（客户端尚未实现）
+# 更新协议（v6 已实现）
 
 `update.json` 提供 schemaVersion、channel、packageName、versionCode、versionName、minSdk、downloadUrl、sha256、sizeBytes、signerCertificateSha256、releaseNotesUrl。
 
@@ -11,6 +11,8 @@
 5. 使用系统安装流程，按系统要求由用户确认。签名不符、哈希错误或下载未完成时不得调用安装。
 6. 不在 APK 中嵌入 GitHub PAT、仓库写权限或签名私钥。
 
-第一版只做应用启动检查及手动检查，不承诺 App 未运行时实时通知。v5 没有此能力，需要手动安装一次带更新功能的新版。
+v6 提供首页前台检查及手动检查，同一次 App 运行自动检查间隔至少 15 分钟，不承诺 App 未运行时实时通知。v5 没有此能力，需要手动安装一次 v6。
+
+清单最大 64 KiB，APK 最大 512 MiB；仅接受指定仓库的 HTTPS 下载地址及 GitHub 官方附件域名跳转。连接超时 15 秒、读取超时 20 秒。文件放在应用缓存，检查大小、哈希、包名、版本名称、递增版本号和固定签名证书通过后打开系统安装页。取消、返回或离开下载页会取消当前下载，重试从头开始。
 
 现有签名证书 SHA-256：`79533c8ad5e18c34a8958513b14aba52fa7783af1641a9cff1c8be8b0e8e7bd6`。它是公开证书摘要，不是私钥。
