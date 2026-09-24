@@ -1,0 +1,21 @@
+# Release assets are uploaded separately; never commit local user data.
+*.apk
+*.idsig
+*.zip
+*.log
+*.keystore
+*.jks
+*.key
+*.pk8
+*.pem
+*.p12
+*.pfx
+.env
+.env.*
+secrets*
+logs/
+diagnostics/
+device-backups/
+out/
+__pycache__/
+*.pyc
