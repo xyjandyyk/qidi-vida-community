@@ -4,6 +4,8 @@
 
 ## 下载与更新
 
+[下载最新版安装包](https://github.com/xyjandyyk/qidi-vida-community/releases/latest) · [查看全部版本](https://github.com/xyjandyyk/qidi-vida-community/releases)
+
 安装包通过本仓库 **Releases** 发布，不放进代码目录。每次发布提供 APK、`SHA256SUMS.txt`、更新说明和 `update.json`。
 
 当前已验证基线是 **1.2.0-offline-v5（150）**。请以 Releases 中实际存在的附件为准。后续带更新检查功能的客户端才能在 App 内提示新版；v5 仍需手动升级一次。
@@ -11,6 +13,8 @@
 同签名的社区版本可覆盖安装。不要为解决不同签名冲突而直接卸载、丢失原有数据。
 
 ## 反馈问题
+
+[提交故障反馈](https://github.com/xyjandyyk/qidi-vida-community/issues/new?template=bug-report.md) · [查看已有问题](https://github.com/xyjandyyk/qidi-vida-community/issues)
 
 在 **Issues → New issue → 故障反馈** 填写版本、机型、固件、发生时间、步骤和实际结果。先搜索已有问题，避免重复提交。
 
